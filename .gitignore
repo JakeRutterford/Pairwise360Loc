@@ -1,0 +1,14 @@
+# python
+.ipynb_checkpoints/
+__pycache__
+
+# datasets
+\outdoor
+
+# results
+\model_output
+\model_params
+/figures
+
+# other
+.DS_Store
