@@ -8,7 +8,10 @@ __pycache__
 # results
 \model_output
 \model_params
-/figures
+\figures
 
 # other
 .DS_Store
+
+# ipython notebooks
+NN-Results.ipynb
