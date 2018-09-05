@@ -4,7 +4,6 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.optim import lr_scheduler
 from torch.utils.data import DataLoader
-from torch.optim import lr_scheduler
 
 # dataloader and models
 from util.data_loader import dataset
@@ -13,7 +12,6 @@ from util import base_model
 # other modules used
 import argparse
 import numpy as np
-import pickle
 import time
 import copy
 import os
@@ -21,7 +19,7 @@ import os
 def params():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--dataroot', type=str, default='outdoor', help='Dataset File Path')
-    parser.add_argument('--model', type=int, default=1, help='Training Model')
+    parser.add_argument('--model', type=int, default=3, help='Training Model')
     parser.add_argument('--dataset', type=str, default='', help='Dataset To Use')
     parser.add_argument('--epochs', type=int, default=200, help='Number of Training Epochs')
     parser.add_argument('--gpu', type=int, default=0, help='GPU to Use if Available')
